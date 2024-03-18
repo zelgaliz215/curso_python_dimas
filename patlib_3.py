@@ -24,11 +24,11 @@ for r in carpeta2:
 #Imprimir las carpetas que tengan archivos
 carpeta3 = Path("2023").glob("**/*")
 
-for r in carpeta3:
+for r in carpeta3: # Filtra si la ruta tiene archivos
     if r.is_file():
         print(r)
 
-carpeta4 = Path("2023").glob("**/*.txt")
+carpeta4 = Path("2023").glob("**/*.txt") # Filtra  los que tengan archivos txt
 
 for r in carpeta4:
     if r in carpeta4:

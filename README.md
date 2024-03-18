@@ -1,6 +1,8 @@
 # Curso libreria pathlib
 **Referencia: Canal de Código Espinoza**
 [Curso de Python 2023: ¿Cómo manipular archivos y directorios con el módulo PathLib de Python?](https://www.youtube.com/playlist?list=PL7HAy5R0ehQVAPSvts0I5FL-ejv6hh4bC)
+## Revisar
+https://www.youtube.com/watch?v=XH8TzcqUWiM
 
 **Video completo**
 [Libreria pathlib](https://www.youtube.com/watch?v=-rpLCYbPU7g&list=PL7HAy5R0ehQVAPSvts0I5FL-ejv6hh4bC&index=9&pp=iAQB)
@@ -78,3 +80,21 @@ for r in carpeta4:
     if r in carpeta4:
         print (r)
 ```
+
+```Python
+# Crear y eliminar archivos
+
+numeros = list(range(1,21)) # Crea una lista con los numero del 1-20
+print(numeros)
+
+for i in numeros:
+    with open(f"C1/archivos_{i}.txt","w") as file: #Crear archivos
+        file.write("Hola Python, este es el archivo número {i}")
+
+# Eliminando archivos:
+from pathlib import Path
+rutas = list(Path("C1").glob("**/*.txt"))        
+
+for ruta in rutas:
+    ruta.unlink()  #esta instruccion elimina / Si e un directorio usar rmdir
+
