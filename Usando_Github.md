@@ -6,6 +6,7 @@
   - [Conectar remoto](#conectar-remoto)
   - [Hago el add .](#hago-el-add-)
   - [Hago el commit](#hago-el-commit)
+  - [Setear branch Main](#setear-branch-main)
   - [Hago el push](#hago-el-push)
 ## Crear repositorio Github
 ***
@@ -32,7 +33,9 @@ git status
 ```
 ## Hago el commit
 ***
-git commit -m "Mensaje del commit 1"
+`git commit -m "Mensaje del commit 1"`
+## Setear branch Main
+`git branch -M main`
 ## Hago el push
 ***
 ```
